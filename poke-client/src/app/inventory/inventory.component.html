@@ -1,0 +1,47 @@
+
+
+
+<!--<div class="flex-container">-->
+<!--<div *ngFor="let pokemon of pokemons" class="container">-->
+<!--<mat-card class="example-card">-->
+<!--  <mat-card-header>-->
+<!--    <div mat-card-avatar class="example-header-image"></div>-->
+<!--    <mat-card-title>{{pokemon.name}}</mat-card-title>-->
+<!--    <mat-card-subtitle>pokemon.id</mat-card-subtitle>-->
+<!--  </mat-card-header>-->
+<!--  <img mat-card-image src="{{pokemon.sprites.front_default}}" >-->
+<!--  <mat-card-content>-->
+<!--    <p>-->
+<!--        You caught this pokemon-->
+<!--    </p>-->
+<!--  </mat-card-content>-->
+
+<!--</mat-card>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<div class="flex-container">
+  <div *ngFor="let pokemon of pokemons" class="container">
+    <mat-card class="example-card">
+      <mat-card-header >
+        <div mat-card-avatar class="example-header-image"  style="background-image: url({{pokemon.sprites.front_default}});"></div>
+        <mat-card-title>{{pokemon.name}}</mat-card-title>
+        <mat-card-subtitle>id: {{pokemon.id}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{pokemon.sprites.front_default}}" >
+      <mat-card-content>
+        <p>
+          You caught this pokemon
+        </p>
+      </mat-card-content>
+<!--      <mat-card-actions>-->
+<!--        <button mat-raised-button (click)="catchPokemon(pokemon)">Catch</button>-->
+<!--      </mat-card-actions>-->
+    </mat-card>
+  </div>
+
+</div>
+
+
